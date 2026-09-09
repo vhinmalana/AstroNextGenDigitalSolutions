@@ -1,0 +1,1 @@
+export default function Universe(){return <div className="universe" aria-hidden="true"><i className="haze a"/><i className="haze b"/><i className="dust a"/><i className="dust b"/><div className="nova"><i/><b/><b/></div>{Array.from({length:18}).map((_,i)=><em key={i}/>)}</div>}

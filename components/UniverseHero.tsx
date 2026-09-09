@@ -1,0 +1,1 @@
+export default function UniverseHero(){return <div className="universe" aria-hidden="true"><div className="orbit one"/><div className="orbit two"/><span className="u-dot d1"/><span className="u-dot d2"/><span className="u-dot d3"/><div className="globe"><i/><b/><em/></div><div className="universe-note"><span/>Innovate<br/>Build<br/>Transform</div></div>}

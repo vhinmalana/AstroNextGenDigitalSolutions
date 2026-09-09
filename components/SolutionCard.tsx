@@ -1,0 +1,1 @@
+import Link from "next/link";import Icon from "@/components/Icon";export default function SolutionCard({title,icon,short}:{title:string,icon:any,short:string}){return <Link href="/solutions" className="solution-card"><div className="icon-box"><Icon name={icon}/></div><h3>{title}</h3><p>{short}</p><span className="arrow"><Icon name="arrow" size={16}/></span></Link>}
