@@ -98,47 +98,34 @@ a {
 }
 
 .brand-mark {
-  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
 
-  display: flex;
-  align-items: flex-end;
-  gap: 3px;
-
-  padding: 4px;
-
-  border-radius: 9px;
-
-  background: linear-gradient(
-    135deg,
-    #0a69d8,
-    #4aa1f7
-  );
-
-  box-shadow:
-    0 8px 20px rgba(22, 119, 232, 0.24);
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.brand-mark span {
-  flex: 1;
+.brand-mark img {
+  display: block;
+  width: 100%;
+  height: 100%;
 
-  border-radius: 3px 3px 2px 2px;
+  object-fit: contain;
+  object-position: center;
+  border-radius: 0;
 
-  background: white;
+  transition: transform 0.3s ease;
 }
 
-.brand-mark span:nth-child(1) {
-  height: 40%;
-}
-
-.brand-mark span:nth-child(2) {
-  height: 65%;
-}
-
-.brand-mark span:nth-child(3) {
-  height: 90%;
+.brand:hover .brand-mark img {
+  transform: scale(1.06);
 }
 
 .brand-text {
@@ -159,7 +146,7 @@ a {
 
   color: #7890aa;
 
-  font-size: 7px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.16em;
 }
@@ -1856,7 +1843,7 @@ a {
 
   align-items: center;
 
-  min-height: 65px;
+  min-height: 50px;
 
   border-bottom: 1px solid #e8f0f7;
 
@@ -2759,4 +2746,89 @@ a {
 
     transition-duration: 0.01ms !important;
   }
+}
+
+/* =========================================================
+   SERVICE CARD — FULL BLUE HOVER EFFECT
+========================================================= */
+
+/* Smooth transitions for the entire card */
+.service-card-inner {
+  transition:
+    background 0.35s ease,
+    transform 0.18s ease-out,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.service-card h3,
+.service-card p,
+.service-number,
+.service-tags span,
+.service-arrow,
+.service-icon {
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Turn the entire card blue */
+.service-card:hover .service-card-inner {
+  background: linear-gradient(
+    135deg,
+    #38bdf8 0%,
+    #1677e8 45%,
+    #073b9a 100%
+  );
+
+  border-color: #38bdf8;
+  box-shadow: 0 20px 45px rgba(22, 119, 232, 0.3);
+}
+
+/* Card title */
+.service-card:hover h3 {
+  color: #ffffff;
+}
+
+/* Card description */
+.service-card:hover p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Service number */
+.service-card:hover .service-number {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* Icon stays visible against the blue card */
+.service-card:hover .service-icon {
+  color: #1269c7;
+  background: #ffffff;
+
+  transform: translateZ(30px) rotate(-5deg);
+}
+
+/* Tags */
+.service-card:hover .service-tags span {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+/* Arrow */
+.service-card:hover .service-arrow {
+  color: #ffffff;
+  transform: translate(3px, -3px);
+}
+
+/* Decorative circle */
+.service-card:hover .service-card-inner::before {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2),
+    transparent 70%
+  );
+
+  transform: scale(1.5);
 }

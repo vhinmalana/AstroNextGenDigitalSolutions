@@ -1,11 +1,11 @@
 export const siteData = {
   company: {
-    name: "JAM Systems Technology",
-    shortName: "JAM Systems Technology",
+    name: "Astro NextGen Digital Solutions",
+    shortName: "Astro NextGen Digital Solutions",
     tagline: "Technology that moves business forward.",
     description:
-      "JAM Systems Technology creates software, websites, POS platforms, integrations, and practical IT solutions that make businesses simpler, faster, and more connected.",
-    email: "hello@jamsystemstechnology.com",
+      "Astro NextGen Digital Solutions creates software, websites, POS platforms, integrations, and practical IT solutions that make businesses simpler, faster, and more connected.",
+    email: "hello@astrongds.com",
     location: "Philippines",
   },
 

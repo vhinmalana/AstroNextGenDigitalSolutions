@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="container narrow">
 
           <span className="section-kicker">
-            About JAM Systems Technology
+            About Astro NextGen Digital Solutions
           </span>
 
           <h1>
@@ -25,7 +25,7 @@ export default function AboutPage() {
           </h1>
 
           <p>
-            JAM Systems Technology is a software
+            Astro NextGen Digital Solutions is a software
             and IT solutions company focused on
             building useful digital products for
             businesses.

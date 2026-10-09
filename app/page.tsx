@@ -13,7 +13,7 @@ const services = [
   },
   {
     number: "02",
-    icon: "⌨",
+    icon: "🌐",
     title: "Website Development",
     description:
       "Fast, responsive, and scalable websites and web applications built for modern digital experiences.",
@@ -21,7 +21,7 @@ const services = [
   },
   {
     number: "03",
-    icon: "⍠",
+    icon: "▯",
     title: "Mobile App Development",
     description:
       "user-focused mobile applications that help businesses connect with customers, improve operations, and deliver services directly through mobile devices.",
@@ -38,7 +38,7 @@ const services = [
   },
   {
     number: "05",
-    icon: "⍉",
+    icon: "⚙",
     title: "Orbit ERP",
     description:
       "Modern Enterprise Resourse Planning, brings your entire business together in one system, giving you the visibility and control to operate smarter, faster and more efficiently",
@@ -46,7 +46,7 @@ const services = [
   },
   {
     number: "06",
-    icon: "◉",
+    icon: "✧",
     title: "Virtual Assistant",
     description:
       "Help businesses extend their capabilities with skilled, technology-ready professionals without the cost and complexity of building a full in-house team.",
@@ -55,21 +55,24 @@ const services = [
 ];
 
 const technologies = [
-  { name: "Orbit", symbol: "⍉", className: "tech-orbit" },
-  { name: "Nova", symbol: "⚛", className: "tech-nova" },
-  { name: "VA", symbol: "◉", className: "tech-va" },
-  { name: "Mobile", symbol: "⍠", className: "tech-mobile" },
-  { name: "Web", symbol: "☁", className: "tech-web" },
+  { name: "Orbit", symbol: "⚙", className: "tech-orbit" },
+  { name: "Nova", symbol: "▦", className: "tech-nova" },
+  { name: "VA", symbol: "✧", className: "tech-va" },
+  { name: "Mobile", symbol: "▯", className: "tech-mobile" },
+  { name: "Web", symbol: "🌐", className: "tech-web" },
 ];
 
 const capabilities = [
-  "Modern architecture",
-  "API-first development",
-  "Cloud-ready applications",
-  "Secure integrations",
-  "Responsive interfaces",
-  "Scalable infrastructure",
-  "Modular platforms",
+  "Future-Ready Architecture.",
+  "API-First Ecosystems.",
+  "Cloud-Native Thinking.",
+  "Security by Design.",
+  "Experience-Driven Interfaces.",
+  "Engineering for Scale.",
+  "Modular by Architecture.",
+  "Intelligence Through Automation.",
+  "Reliability by Design.",
+  "Business-Driven Innovation.",
 ];
 
 export default function Home() {
@@ -132,29 +135,27 @@ export default function Home() {
           <button
             className="brand"
             onClick={() => scrollToSection("home")}
-            aria-label="JAM Systems Technology"
+            aria-label="Astro NextGen Digital Solutions"
           >
+            
             <span className="brand-mark">
-              <span />
-              <span />
-              <span />
+              <img
+                  src="/images/logo/astrologo.jpg"
+                  alt="Astro"
+              />
             </span>
 
             <span className="brand-text">
-              <strong>JAM</strong>
-              <small>SYSTEMS TECHNOLOGY</small>
+              <strong>Astro</strong>
+              <strong>NextGen Digital Solutions</strong>
             </span>
           </button>
 
           <nav className={`desktop-nav ${menuOpen ? "open" : ""}`}>
             <button onClick={() => scrollToSection("home")}>Home</button>
             <button onClick={() => scrollToSection("about")}>About</button>
-            <button onClick={() => scrollToSection("solutions")}>
-              Solutions
-            </button>
-            <button onClick={() => scrollToSection("technology")}>
-              Technology
-            </button>
+            <button onClick={() => scrollToSection("solutions")}>Solutions</button>
+            {/* <button onClick={() => scrollToSection("technology")}>Technology</button>*/}
             <button
               className="nav-cta"
               onClick={() => scrollToSection("contact")}
@@ -212,19 +213,17 @@ export default function Home() {
           <div className="hero-copy">
             <div className="eyebrow">
               <span className="status-dot" />
-              Technology built for business
+              NEXT-GENERATION DIGITAL SOLUTIONS
             </div>
 
             <h1>
-              Build better.
+              Think beyond today.
               <br />
-              <span>Move faster.</span>
+              <span>Engineer what’s next.</span>
             </h1>
 
             <p className="hero-text">
-              JAM Systems Technology creates modern software, web platforms,
-              integrations, and digital solutions that help businesses work
-              smarter.
+              Astro NextGen Digital Solutions architects and engineers intelligent, high-performance digital ecosystems that help businesses operate smarter, scale faster, and compete without limits. Through modern architecture, precision engineering, and future-ready technology, we transform complex challenges into powerful business advantages.
             </p>
 
             <div className="hero-actions">
@@ -244,7 +243,7 @@ export default function Home() {
                 <span>→</span>
               </button>
             </div>
-
+    {/* 
             <div className="hero-proof">
               <div className="proof-item">
                 <strong>05+</strong>
@@ -262,9 +261,10 @@ export default function Home() {
 
               <div className="proof-item">
                 <strong>24/7</strong>
-                <span>Digital world</span>
+                <span>Digital presence</span>
               </div>
             </div>
+    */}
           </div>
 
           {/* INTERACTIVE HERO VISUAL */}
@@ -285,8 +285,8 @@ export default function Home() {
               <div className="system-card">
                 <div className="card-top">
                   <div>
-                    <span className="mini-label">Your Business</span>
-                    <h3>Digital Platform</h3>
+                    <span className="mini-label">Next Generation</span>
+                    <h3>Digital Solutions</h3>
                   </div>
 
                   <span className="live">
@@ -391,7 +391,7 @@ export default function Home() {
 <section className="trust-strip">
   <div className="trust-inner">
     <div className="trust-label">
-      <span>BUILT BY JAM</span>
+      <span>BUILT BY ASTRO</span>
     </div>
 
     <div className="trust-marquee">
@@ -399,42 +399,42 @@ export default function Home() {
         {/* SET 1 */}
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/KapeTayo.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/KapeTayo.jpg" alt="ASTRO" />
           </div>
           <span>KapeTayo</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/ChefPanda.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/ChefPanda.jpg" alt="ASTRO" />
           </div>
           <span>Chef Panda</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/HangryPatata.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/HangryPatata.jpg" alt="ASTRO" />
           </div>
           <span>Hangry Patata</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/Hype.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/Hype.jpg" alt="ASTRO" />
           </div>
           <span>Hype Trendsetter</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/KlayStore.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/KlayStore.jpg" alt="ASTRO" />
           </div>
           <span>Klay Store PH</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/KantoGrill.jpg" alt="JAM" />
+            <img src="/images/logo/KantoGrill.jpg" alt="ASTRO" />
           </div>
           <span>Kanto Grill</span>
         </div>
@@ -442,42 +442,42 @@ export default function Home() {
         {/* SET 2 — duplicate for seamless animation */}
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/KapeTayo.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/KapeTayo.jpg" alt="ASTROy" />
           </div>
           <span>Kape Tayo</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/ChefPanda.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/ChefPanda.jpg" alt="ASTRO" />
           </div>
           <span>Chef Panda</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/HangryPatata.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/HangryPatata.jpg" alt="ASTRO" />
           </div>
           <span>Hangry Patata</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/Hype.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/Hype.jpg" alt="ASTRO" />
           </div>
           <span>Hype Trendsetter</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/KlayStore.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/KlayStore.jpg" alt="ASTRO" />
           </div>
           <span>Klay Store PH</span>
         </div>
 
         <div className="tech-item">
           <div className="tech-logo">
-            <img src="/images/logo/KantoGrill.jpg" alt="JAM Systems Technology" />
+            <img src="/images/logo/KantoGrill.jpg" alt="ASTRO" />
           </div>
           <span>Kanto Grill</span>
         </div>
@@ -492,9 +492,9 @@ export default function Home() {
           <div>
             <span className="section-kicker">WHAT WE DO</span>
             <h2>
-              Technology that
+              Where business vision
               <br />
-              <span>moves business forward.</span>
+              <span>becomes technology</span>
             </h2>
           </div>
 
@@ -547,19 +547,15 @@ export default function Home() {
       <section id="about" className="section approach-section">
         <div className="approach-grid">
           <div className="approach-copy">
-            <span className="section-kicker">OUR APPROACH</span>
+           <span className="section-kicker">OUR PHILOSOPHY</span>
 
             <h2>
-              Simple technology.
+              Complex challenges
               <br />
-              <span>Serious results.</span>
+              <span>Intelligent solutions.</span>
             </h2>
-
             <p>
-              Great technology should make things simpler — not more
-              complicated. We combine thoughtful design, solid engineering,
-              and practical business understanding to create solutions that
-              deliver real value.
+              At Astro, we unite forward-thinking architecture, precision engineering, and business-driven innovation to build digital solutions that perform today, adapt tomorrow, and scale for the future. Every system we create has a purpose: to eliminate complexity, unlock opportunities, and turn ambitious ideas into measurable impact.
             </p>
 
             <button
@@ -572,7 +568,7 @@ export default function Home() {
 
           <div className="capability-panel">
             <div className="panel-heading">
-              <span>OUR ENGINEERING PRINCIPLES</span>
+              <span>OUR ENGINEERING STANDARD</span>
               <span>06</span>
             </div>
 
@@ -593,7 +589,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TECHNOLOGY */}
+      {/* TECHNOLOGY 
       <section id="technology" className="section technology-section">
         <div className="technology-background">
           <div className="technology-orb" />
@@ -632,6 +628,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+*/}
 
       {/* CTA */}
       <section id="contact" className="section cta-section">
@@ -652,7 +649,7 @@ export default function Home() {
               into a practical technology solution.
             </p>
 
-            <a className="button button-light" href="mailto:hello@jamsystemstechnology.com">
+            <a className="button button-light" href="mailto:hello@astrongds.com">
               Start a conversation
               <span>↗</span>
             </a>
@@ -664,7 +661,7 @@ export default function Home() {
             <div className="cta-ring ring-three" />
 
             <div className="cta-core">
-              <span>JAM</span>
+              <span>Astro</span>
               {/*<small>SYSTEMS</small>*/}
             </div>
           </div>
@@ -676,15 +673,17 @@ export default function Home() {
         <div className="footer-main">
           <div className="footer-brand">
             <div className="brand">
-              <span className="brand-mark">
-                <span />
-                <span />
-                <span />
-              </span>
+
+            <span className="brand-mark">
+              <img
+                  src="/images/logo/astrologo.jpg"
+                  alt="Astro"
+              />
+            </span>
 
               <span className="brand-text">
-                <strong>JAM</strong>
-                <strong>SYSTEMS TECHNOLOGY</strong>
+                <strong>Astro</strong>
+                <strong>NextGen Digital Solutions</strong>
               </span>
             </div>
 
@@ -697,14 +696,14 @@ export default function Home() {
           <div className="footer-links">
             <div>
               <span>COMPANY</span>
+              <button onClick={() => scrollToSection("home")}>
+                Home
+              </button>
               <button onClick={() => scrollToSection("about")}>
                 About Us
               </button>
               <button onClick={() => scrollToSection("solutions")}>
                 Solutions
-              </button>
-              <button onClick={() => scrollToSection("technology")}>
-                Technology
               </button>
             </div>
 
@@ -713,7 +712,7 @@ export default function Home() {
               <button>Software Development</button>
               <button>Website Development</button>
               <button>Mobile App Development</button>
-              <button>NOVA POS</button>
+              <button>Nova POS</button>
               <button>Orbit ERP</button>
               <button>Virtual Assistance</button>
             </div>
@@ -721,9 +720,9 @@ export default function Home() {
             <div>
               <span>CONTACT</span>
               <button>Baliwag City, Bulacan, Philippines</button>
-              <button>0956 642 8935</button>
-              <a href="mailto:hello@jamsystemstechnology.com">
-                hello@jamsystemstechnology.com
+              <button>(+63) 956 642 8935</button>
+              <a href="mailto:hello@astrongds.com">
+                hello@astrongds.com
               </a>
               <button onClick={() => scrollToSection("contact")}>
                 Start a Project
@@ -733,7 +732,7 @@ export default function Home() {
         </div>
 
         <div className="footer-bottom">
-          <span>© 2026 JAM Systems Technology. All rights reserved.</span>
+          <span>© 2026 Astro NextGen Digital Solutions. All rights reserved.</span>
 
           <span>
             Designed & engineered with purpose.

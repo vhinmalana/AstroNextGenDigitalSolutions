@@ -1,12 +1,12 @@
-# JAM Systems Technology
+# Astro NextGen Digital Solutions
 
 Redesigned to closely match the supplied light-blue homepage mockup.
 
 ## Run
 
 ```powershell
-npm install
-npm run dev
+npm.cmd install
+npm.cmd run dev
 ```
 
 Open http://localhost:3000
@@ -14,8 +14,8 @@ Open http://localhost:3000
 For production testing:
 
 ```powershell
-npm run build
-npm start
+npm.cmd run build
+npm.cmd start
 ```
 
 Edit `data/siteData.ts` for company details, services, portfolio, partners and tech stack.
